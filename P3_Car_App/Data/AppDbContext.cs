@@ -16,9 +16,12 @@ namespace P3_Car_App.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            var path = Path.Combine(AppContext.BaseDirectory, "car.db");
+            var path = Path.Combine(
+                Directory.GetCurrentDirectory(),
+                "car.db"
+            );
+
             options.UseSqlite($"Data Source={path}");
-           // MessageBox.Show(AppContext.BaseDirectory);
         }
     }
     

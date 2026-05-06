@@ -82,7 +82,7 @@ namespace P3_Car_App
 
                 dataGridViewEngine.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-                HideIdColumn();
+                //HideIdColumn();
                 AddButtons();
             }
 
@@ -92,11 +92,11 @@ namespace P3_Car_App
                 MessageBox.Show("Operation failed.");
             }
         }
-        void HideIdColumn()
-        {
-            if (dataGridViewEngine.Columns["Id"] != null)
-                dataGridViewEngine.Columns["Id"].Visible = false;
-        }
+        //void HideIdColumn()
+        //{
+        //    if (dataGridViewEngine.Columns["Id"] != null)
+        //        dataGridViewEngine.Columns["Id"].Visible = false;
+        //}
         void AddButtons()
         {
             if (dataGridViewEngine.Columns["ViewCars"] != null)

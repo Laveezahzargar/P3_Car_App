@@ -47,7 +47,7 @@ namespace P3_Car_App
 
                 ApplicationConfiguration.Initialize();
                 using var context = new AppDbContext();
-                context.Database.EnsureCreated();
+                //context.Database.EnsureCreated();
                 Application.Run(new Main_Form());
             }
             catch (Exception ex)

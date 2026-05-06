@@ -81,7 +81,7 @@ namespace P3_Car_App
 
                 dataGridViewManufacturer.DataSource = list;
 
-                HideIdColumn();
+                //HideIdColumn();
                 AddButtons();
             }
             catch (Exception ex)
@@ -91,11 +91,11 @@ namespace P3_Car_App
             }
         }
 
-        void HideIdColumn()
-        {
-            if (dataGridViewManufacturer.Columns["Id"] != null)
-                dataGridViewManufacturer.Columns["Id"].Visible = false;
-        }
+        //void HideIdColumn()
+        //{
+        //    if (dataGridViewManufacturer.Columns["Id"] != null)
+        //        dataGridViewManufacturer.Columns["Id"].Visible = false;
+        //}
 
         void AddButtons()
         {
